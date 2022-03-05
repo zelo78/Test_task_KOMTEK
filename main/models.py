@@ -35,7 +35,7 @@ class ResourceVersion(models.Model):
         max_length=32,
         verbose_name="Версия справочника"
     )
-    valid_from = models.DateTimeField(default=timezone.now)
+    valid_from = models.DateTimeField(default=timezone.now, verbose_name="Дата начала действия")
 
     class Meta:
         verbose_name = "Версия справочника"
